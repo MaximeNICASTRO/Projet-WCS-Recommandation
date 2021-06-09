@@ -20,7 +20,6 @@ from plotly.subplots import make_subplots
 import pydeck as pdk
 import webbrowser
 import base64
-import datetime
 
 #Import bases de données
 df_bases_filmsFR = pd.read_csv("https://raw.githubusercontent.com/MaximeNICASTRO/Projet-WCS-Recommandation/main/df_bases_filmsFR_2?token=ATA24JWEZV6DUBA42GI66QTAYDQLU")
