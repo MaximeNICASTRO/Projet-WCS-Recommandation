@@ -23,13 +23,13 @@ import base64
 import datetime
 
 #Import bases de données
-df_bases_filmsFR = pd.read_csv("/Users/maximenicastro/Desktop/WILD/Projet 2/BDD/df_bases_filmsFR_2")
-df_bases_acteurs = pd.read_csv("/Users/maximenicastro/Desktop/WILD/Projet 2/BDD/df_staff.tsv")
-df_bases_visu = pd.read_csv("/Users/maximenicastro/Desktop/WILD/Projet 2/BDD/df_bases_filmsFR_visu_2")
-df_acteurs_visu = pd.read_csv("/Users/maximenicastro/Desktop/WILD/Projet 2/BDD/df_staff_visu_2")
-df_bases_KNN_F = pd.read_csv("/Users/maximenicastro/Desktop/WILD/Projet 2/BDD/df_bases_KNN_F")
-X_bis = pd.read_csv("/Users/maximenicastro/Desktop/WILD/Projet 2/BDD/X_bis")
-voisins_final = pd.read_csv("/Users/maximenicastro/Desktop/WILD/Projet 2/BDD/voisins_final")
+df_bases_filmsFR = pd.read_csv("https://raw.githubusercontent.com/MaximeNICASTRO/Projet-WCS-Recommandation/main/df_bases_filmsFR_2?token=ATA24JWEZV6DUBA42GI66QTAYDQLU")
+df_bases_acteurs = pd.read_csv("https://raw.githubusercontent.com/MaximeNICASTRO/Projet-WCS-Recommandation/main/df_staff.tsv?token=ATA24JTK4D3APIUTLJTIQVDAYDQRM")
+df_bases_visu = pd.read_csv("https://raw.githubusercontent.com/MaximeNICASTRO/Projet-WCS-Recommandation/main/df_bases_filmsFR_visu_2?token=ATA24JUUIALHK3FNODIMN33AYDQQE")
+df_acteurs_visu = pd.read_csv("https://raw.githubusercontent.com/MaximeNICASTRO/Projet-WCS-Recommandation/main/df_staff_visu_2?token=ATA24JUAHQ5BNNOZRDJ7BVDAYDQXU")
+df_bases_KNN_F = pd.read_csv("https://raw.githubusercontent.com/MaximeNICASTRO/Projet-WCS-Recommandation/main/df_bases_KNN_F?token=ATA24JVWYJAXBR6MXXRKLYLAYDQJW")
+X_bis = pd.read_csv("https://raw.githubusercontent.com/MaximeNICASTRO/Projet-WCS-Recommandation/main/X_bis?token=ATA24JXHVVN7RARKRIFIMLDAYDQIE")
+voisins_final = pd.read_csv("https://raw.githubusercontent.com/MaximeNICASTRO/Projet-WCS-Recommandation/main/voisins_final?token=ATA24JQR6QFVSBYFPLBT5YTAYDQZO")
 
 def translate(x):
     translation = {'Comedy': 'Comédie', 'Fantasy': 'Fantastique', 'Romance': "Romance", 'Drama':'Drame', 'War':'Guerre',
